@@ -4,7 +4,6 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import kotlinx.android.synthetic.main.view_popular_food.view.*
 
 /**
@@ -23,7 +22,7 @@ class AdapterPopularFood(private val data: ArrayList<String>): RecyclerView.Adap
     }
 
     override fun onBindViewHolder(parent: MyViewHolder, i: Int) {
-        parent.itemView.tvNameFood.text = data[i]
+        parent.itemView.tvName.text = data[i]
     }
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
