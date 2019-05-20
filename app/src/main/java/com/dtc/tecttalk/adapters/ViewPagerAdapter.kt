@@ -1,4 +1,4 @@
-package com.dtc.tecttalk
+package com.dtc.tecttalk.adapters
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager

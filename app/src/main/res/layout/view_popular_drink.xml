@@ -2,7 +2,7 @@
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="200dp"
+    android:layout_width="match_parent"
     android:layout_height="150dp"
     android:layout_marginStart="10dp"
     android:layout_marginTop="8dp"
@@ -17,10 +17,10 @@
         <ImageView
                 android:id="@+id/img"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/tvNameFood"
-                android:scaleType="centerCrop"
-                android:layout_marginTop="0dp" android:layout_alignParentTop="true"/>
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tvNameDrink"
+                android:scaleType="fitXY"
+                android:src="@drawable/drink"/>
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
@@ -33,19 +33,19 @@
             android:id="@+id/tvDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/tvNameFood"
+            android:layout_above="@+id/tvNameDrink"
             android:padding="5dp"
             android:text="Desc"
             android:textSize="12sp"
             android:textColor="#c8ffffff"/>
         
         <TextView
-            android:id="@+id/tvNameFood"
+            android:id="@+id/tvNameDrink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:padding="5dp"
-            android:text="Food Name"
+            android:text="Drink Name"
             android:textSize="12sp"
             android:textStyle="bold"
             android:textColor="#707070"/>
